@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.picture_set_1 {
+    height: 600px;
+    width: auto;
+}
+
+#grid_wrapper_main {
+    display: grid;
+    height: 100vh;
+    width: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 70px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:
+    "hea"
+    "nav"
+    "se1"
+    "se2"
+    "se3"
+    "se4"
+    "se5"
+    "se6"
+    ;
+
+}
+
+header {
+    background-image: url(../img/skyline.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    grid-area: hea;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-attachment: fixed;
+    
+}
+
+h1 {
+    font-size: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+    background: black;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_1 {
+    grid-area: se1;
+    background: rgb(8, 163, 8);
+}
+
+#section_2 {
+    grid-area: se2;
+    background: rgb(34, 129, 34);
+}
+
+#section_3 {
+    grid-area: se3;
+    background: rgb(78, 247, 78);
+}
+
+#section_4 {
+    grid-area: se4;
+    background: rgb(0, 255, 0);
+}
+
+#section_5 {
+    grid-area: se5;
+    background: rgb(93, 190, 93);
+}
+
+#section_6 {
+    background: beige;
+    grid-area: se6;
+    display: flex;
+    padding: 25px;
+
+}
+
+#link_list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+section {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
