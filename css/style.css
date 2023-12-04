@@ -4,32 +4,56 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
 .picture_set_1 {
-    height: 600px;
+    height: 70px;
     width: auto;
+}
+
+.discount_images {
+    height: 400px;
+    border-radius: 50px;
+}
+
+.discounts {
+    background: whitesmoke;
+    display: flex;
+    justify-content: stretch;
+    border-radius: 50px;
+    border-bottom-style: solid;
+    border-color: #8BC34A;
+    border-width: 20px;
 }
 
 #grid_wrapper_main {
     display: grid;
     height: 100vh;
     width: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 70px 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 20xp 1fr 20px;
+    grid-template-rows: 500px 70px 400px 400px 400px 400px 400px 400px;
     grid-template-areas:
-    "hea"
-    "nav"
-    "se1"
-    "se2"
-    "se3"
-    "se4"
-    "se5"
-    "se6"
+    "hea hea hea"
+    "nav nav nav"
+    "... se1 ..."
+    "... se2 ..."
+    "... se3 ..."
+    "... se4 ..."
+    "... se5 ..."
+    "... se6 ..."
     ;
+    row-gap: 30px;
+}
 
+#empty {
+    grid-area: ...;
 }
 
 header {
-    background-image: url(../img/skyline.jpg);
+    background-image: url(../img/nature.jpg);
     background-size: cover;
     color: whitesmoke;
     grid-area: hea;
@@ -37,53 +61,49 @@ header {
     justify-content: space-evenly;
     align-items: center;
     background-attachment: fixed;
-    
 }
 
 h1 {
     font-size: 40px;
     text-decoration: none;
-    color: whitesmoke;
+    outline: black;
+    outline-width: 10px;
+    outline-color: black;
 }
 
 nav {
     position: sticky;
     top: 0;
-
-    background: black;
+    background: #8BC34A;
     grid-area: nav;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
 }
 
 #section_1 {
     grid-area: se1;
-    background: rgb(8, 163, 8);
 }
 
 #section_2 {
     grid-area: se2;
-    background: rgb(34, 129, 34);
 }
 
 #section_3 {
     grid-area: se3;
-    background: rgb(78, 247, 78);
 }
 
 #section_4 {
     grid-area: se4;
-    background: rgb(0, 255, 0);
 }
 
 #section_5 {
     grid-area: se5;
-    background: rgb(93, 190, 93);
 }
 
 #section_6 {
-    background: beige;
     grid-area: se6;
     display: flex;
     padding: 25px;
@@ -108,4 +128,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+article {
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+    margin: 10px;
 }
