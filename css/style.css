@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&display=swap');
 
 body {
     background-image: url(../img/background.jpg);
@@ -28,7 +28,7 @@ body {
 
 .discount_images:hover {
     clip-path: inset(calc((1 -1/var(--f)) * 50%));
-    scale: var(--f)
+    scale: var(--f);
 }
 
 .vertical_ads {
@@ -47,7 +47,7 @@ body {
 
 .product_images:hover {
     clip-path: inset(calc((1 -1/var(--f)) * 50%));
-    scale: var(--f)
+    scale: var(--f);
 }
 
 .percent_off {
@@ -121,7 +121,7 @@ article {
     margin: 10px;
 }
 
-h1 {
+h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
