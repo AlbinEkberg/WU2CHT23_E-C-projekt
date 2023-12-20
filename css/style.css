@@ -27,7 +27,7 @@ body {
 }
 
 .discount_images:hover {
-    clip-path: inset(calc((1 -1/var(--f)) * 50%));
+    clip-path: inset(calc((1 - 1/var(--f)) * 50%));
     scale: var(--f);
 }
 
@@ -43,10 +43,11 @@ body {
     transition: all 0.4s ease;
     --f: 1.05;
     clip-path: inset(0);
+    overflow: hidden;
 }
 
 .product_images:hover {
-    clip-path: inset(calc((1 -1/var(--f)) * 50%));
+    clip-path: inset(calc((1 - 1/var(--f)) * 50%));
     scale: var(--f);
 }
 
